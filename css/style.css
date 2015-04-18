@@ -22,6 +22,7 @@ body {
 	position:fixed;
 	background: #FFFFFF;
 top:0px;
+z-index: 1000;
 }
 
 #start {
@@ -104,15 +105,78 @@ background-attachment: fixed;
 }
 
 #second-content{
-	height: 220px;
-
-	background-image: url("../img/blue.png");
+	height: 290px;
+	background-image: -webkit-radial-gradient(center, ellipse cover, #63aacb, #0174b2);
 }
 
+.searchForm{
+	float:right;
+	border-radius: 5px;
+}
+
+.searchBtn{
+	border-radius: 5px;
+}
+
+.search{
+	margin-left: 15px;
+	width: 145px;
+	border-radius: 5px;
+
+}
+
+.seeAll{
+	padding-top: 10px;
+	float:center;
+	text-align: center;
+}
+
+.seeBtn{
+	background-color: #0174b2; 
+	border-radius: 4px;
+	border: 0px;
+	width: 200px;
+	height: 40px;
+    padding: 2px 4px;  
+    border: 1px solid #63aacb;
+  
+
+}
 
 #third-content{
 	height:300px;
-	background: #f3f3f3;
+	background-image: url("../img/london1.jpg");
+	opacity: 0.8;
+		background-size: cover;
+	background-attachment: fixed;
+	
+}
+
+.happening > h2 {
+		color: white;
+	text-align: center;
+	font-size: 30px;
+	font-weight: normal;
+	text-shadow: 1px 1px #111111;
+}
+
+
+.happeningBoxes{
+	opacity: 0.5;
+	background-color: white;
+	color:black;
+	width: 240px;
+	height: 80px;
+	padding-top: 50px;
+}
+
+.bRight{
+	padding-right: 50px;
+	float: center;
+}
+
+.bRight > h1 {
+	float:left;
 }
 
 #fourth-content{
@@ -140,22 +204,20 @@ p {
     border-color: #aaa #444 #444 #aaa;
 }
 
+
 .do-with-comverse li
 {
-
+vertical-align: center;
 list-style-type: none;
-padding-right: 5%;
-width:33%;
 max-height: 220px;
 display: inline-block;
+text-align: center;
 }
 
 #doing li
 {
 text-align: center;
 list-style-type: none;
-padding-right: 5%;
-width:24%;
 max-height: 220px;
 display: inline-block;
 }
@@ -175,16 +237,31 @@ display: inline-block;
 	font-weight: normal;
 }
 
+.do-with-comverse ul{
+	padding: 0;
+	max-width:100%;
+margin:0 auto;
+line-height: 1.4em;
+	position: relative;
+	float:center;
+}
+
 
 #doings p {
 	color: white;
 	font-size: 9px;
 	width:100%;
+	min-width: 100%;
 }
 
 .icons{
 	width: 142px;
 	height: 63px;
+}
+
+.canIcons{
+
+	display: inline-block;
 }
 
 
@@ -213,32 +290,40 @@ display: inline-block;
 
 .box{
 	display: inline-block;
-	margin-left: 35px;
-	
-	opacity: 0.8;
-	width:150px;
+	opacity: 0.9;
+	width:30%;
 	height:100px;
 	  -webkit-transition: width 2s, height 4s; /* For Safari 3.1 to 6.0 */
     transition: width 2s, height 4s;
     color:white;
     border-radius: 5px;
+    box-shadow:  0px 1px 1px 0 #c3c3c3;
+
 }
 
 .boxContent{
 	padding-left: 5px;
 	width: 100%;
+
 }
 
 .box1{
-	background: linear-gradient(red, black);
+	/*background: linear-gradient(red, black);*/
+	background-color: #f842a0;
+	margin-right: 17px;
+
 }
 
 .box2{
-	background: linear-gradient(blue, yellow);
+	/*background: linear-gradient(blue, yellow);*/
+	background-color: #69c43c;
+	margin-right: 17px;
 }
 
 .box3{
-	background: linear-gradient(red, white);
+	/*background: linear-gradient(red, white);*/
+	background-color: #ff6903;
+
 }
 
 .box:hover{
@@ -249,6 +334,5 @@ display: inline-block;
 
 .box-container{
 	margin-top: 20px;
-	padding-left: 5%;
-	padding-right: 5%;
+
 }
